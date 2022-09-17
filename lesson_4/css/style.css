@@ -1,0 +1,112 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:regular,700,900);
+@import url(https://fonts.googleapis.com/css?family=Lato:regular,700,900);
+
+@font-face {
+	font-family: "Larsseit";
+	src: url("../fonts/Larsseit.woff2") format("woff2"), url("../fonts/Larsseit.woff") format("woff");
+	font-display: swap;
+	font-weight: 400;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "Larsseit";
+	src: url("../fonts/Larsseit-Medium.woff2") format("woff2"), url("../fonts/Larsseit-Medium.woff") format("woff");
+	font-display: swap;
+	font-weight: 500;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "Larsseit";
+	src: url("../fonts/Larsseit-Bold.woff2") format("woff2"), url("../fonts/Larsseit-Bold.woff") format("woff");
+	font-display: swap;
+	font-weight: 700;
+	font-style: normal;
+}
+
+
+
+body {
+    font-family: "Roboto";
+    background-color:bisque;
+}
+
+.header {
+    margin: 0 0 20px 0;
+}
+
+.title {
+    font-family: "Lato";
+    font-weight: 900;
+    font-size: 45px;
+    color: rgb(127, 188, 61);
+}
+
+.title, .subtitle {
+    margin: 0 0 15px 0;
+    text-align: center;
+}
+
+.subtitle {
+    font-family: "Lato";
+    font-weight: 700;
+    font-size: 30px;
+    color: rgb(134, 29, 231);
+}
+
+.text {
+    font-family: "Larsseit";
+    font-weight: 500;
+	font-style: normal;
+    margin: 0 0 15px 0;
+}
+
+.menu__item:hover {
+    color: rgb(138, 43, 226);
+}
+
+.menu__item {
+    font-family: "Larsseit";
+    font-weight: 400;
+}
+
+.text.co-writing {
+    font-family: "Lato";
+    font-weight: 400;
+    color: rgb(167, 197, 15);
+}
+
+
+.bold-larsseit {
+    font-family: "Larsseit";
+    font-weight: 700;
+    font-size: 50px;
+}
+
+.medium-larsseit {
+    font-family: "Larsseit";
+    font-weight: 500;
+    font-size: 30px;
+}
+
+.regular-larsseit {
+    font-family: "Larsseit";
+    font-weight: 400;
+    font-size: 20px;
+    padding-bottom: 20px;
+}
+
+.footer {
+    display: block;
+}
+
+.top {
+    color: rgb(78, 50, 50);
+    font-weight: 700;
+    font-family: "Larsseit";
+}
+
+.top:hover {
+    color: rgb(144, 153, 22);
+}
