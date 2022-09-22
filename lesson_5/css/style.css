@@ -1,0 +1,126 @@
+@import url(https://fonts.googleapis.com/css?family=Lato:regular,700,900&display=swap);
+
+@font-face {
+    font-family: 'Raleway';
+    src: url('../fonts/Raleway-ThinItalic.woff2') format('woff2'),
+        url('../fonts/Raleway-ThinItalic.woff') format('woff');
+    font-weight: 100;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'PT Sans';
+    src: url('../fonts/PTSans-Regular.woff2') format('woff2'),
+        url('../fonts/PTSans-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'PT Sans';
+    src: url('../fonts/PTSans-Bold.woff2') format('woff2'),
+        url('../fonts/PTSans-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+body {
+    font-family: "Lato",serif;
+    font-style: normal;
+    font-weight: 400;
+    background-color: rgb(230, 233, 193);
+}
+
+.title {
+    font-family: "PT Sans";
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 1.5;
+    color: rgb(25, 25, 192);
+    margin-bottom: 20px;
+}
+
+.subtitle, h3 {
+    font-size: 18px;
+    line-height: 1.2;
+    margin-bottom: 10px;
+}
+
+img {
+    margin-bottom: 20px;
+    max-width: 100%;
+}
+
+.text {
+    font-family: "PT Sans";
+    font-style: normal;
+    font-weight: 400;
+    text-align: justify;
+}
+
+.text.crucial {
+    color: rgb(191, 78, 78);
+    text-shadow: 2px 2px 5px #000, -2px -2px 5px rgb(20, 29, 161);
+}
+
+.text span {
+    color: rgb(46, 220, 162);
+}
+
+.training {
+    background-color: rgb(112, 217, 182);    
+}
+
+.train1 {
+    font-family: "Raleway", serif;
+    font-style: italic;
+    font-weight: 100;
+    text-align: right;
+    text-decoration: line-through;
+    margin-bottom: 20px;
+}
+
+.train2 {
+    text-align: left;
+    text-decoration: overline;
+    letter-spacing: 12px;
+    margin-bottom: 20px;
+}
+
+.train3 {
+    text-align: center;
+    text-decoration: underline;
+    text-transform: lowercase;
+    white-space: nowrap;
+    margin-bottom: 20px;
+}
+
+.train4 {
+    text-transform: uppercase;
+    font-size: 12px;
+    line-height: 1.5;
+    text-indent: 50px;
+    margin-bottom: 20px;
+}
+
+.train5 {
+    word-spacing: 20px;
+    margin-bottom: 20px;
+}
+
+.train6 {
+    background-color: rgb(127, 61, 61);
+    margin-bottom: 20px;
+    padding: 10px 20px 40px 30px;
+}
+
+.train7 {
+    background-color: rgb(76, 187, 42);
+    box-sizing: content-box;
+    padding: 10px 20px;
+    margin: 40px 0;
+}
