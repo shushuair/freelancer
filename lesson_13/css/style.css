@@ -1,0 +1,178 @@
+@import url(https://fonts.googleapis.com/css?family=Courier+Prime:regular,700);
+
+.wrapper {
+ position: relative;
+ min-height: 100%;
+ overflow: hidden;  
+}
+
+.practice {
+	background: url("../img/tennis-court.jpg") 0 0/cover no-repeat;
+	width: 100%;
+   height: 800px;	
+	position: relative;
+}
+
+.practice::before {
+	content: "";
+	top: -4%;
+	left: 42%;
+	background: url("../img/scoreboard.jpg") 23px 31px/200px no-repeat;
+	position: absolute;
+	width: 200px;
+	height: 200px;
+	transform: rotate(3deg);
+}
+
+.circle__position {
+	position: relative;
+	min-height: 20px;
+   top: 200px;
+   left: 100px;
+}
+
+.circle__object {
+	position: absolute;
+	left: 0px;
+   top: 120;
+	height: 70px;
+	width: 70px;
+	border-radius: 50%;
+	overflow: hidden;
+   background-color: yellow;
+	animation: tennis-move 30s ease-in 1 alternate;
+}
+
+span {
+	display: block;
+}
+
+@Keyframes tennis-move {
+	from {}  
+	5% {margin-left:1140px;margin-top:370px;}
+	10% {margin-left:60px;margin-top:100px;}
+	15% {margin-left:1120px;margin-top:200px;}
+	20% {margin-left:60px;margin-top:300px;}
+	25% {margin-left:1130px;margin-top:240px;}
+	30% {margin-left:40px;margin-top:205px;}
+	35% {margin-left:1134px;margin-top:150px;}
+	40% {margin-left:70px;margin-top:250px;}
+	45% {margin-left:1130px;margin-top:220px;}
+	50% {margin-left:45px;margin-top:200px;}
+	55% {margin-left:1125px;margin-top:120px;}
+	60% {margin-left:30px;margin-top:330px;}
+	65% {margin-left:1115px;margin-top:300px;}
+	70% {margin-left:50px;margin-top:300px;}
+	75% {margin-left:1140px;margin-top:250px;}
+	80% {margin-left:60px;margin-top:140px;}
+	85% {margin-left:1130px;margin-top:150px;}
+	90% {margin-left:50px;margin-top:120px;}
+	95% {margin-left:1120px;margin-top:220px;}
+	to {margin-left:-100px;margin-top:370px;}
+ }
+.text {
+	font-family: "Courier Prime";
+	font-size: 40px;
+	margin: 0 auto;
+	color: #fff;
+	max-width: 600px;
+	overflow: hidden;
+	padding-bottom: 10px;
+   border: 10px solid rgb(14, 7, 111);
+   background-color: rgb(18, 161, 197);
+	transform: translate(-1500px);	
+	animation: score 2s ease-out 31s 1 forwards;
+	position: relative;
+}
+
+@keyframes score {
+	0% {
+		transform: translate(-1500px);
+	}
+	100% {
+		transform: translate(10%,218%);
+	}
+}
+
+.text__title {
+	text-transform: uppercase;
+	transform: translate(-500px);
+	margin-bottom: 10px;
+	animation: title 0.5s ease-out 32s 1 forwards;
+	position: relative;
+	line-height: 1.3;
+}
+
+@keyframes title {
+	0% {
+		transform: translate(-500px);
+	}
+	100% {
+		transform: translate(5px,0);
+	}
+}
+
+.text__title::before {
+	content: "";
+	display: inline-block;
+	height: 2px;
+	width: 450px;
+	background-color: #fff;
+	position: absolute;
+	bottom: 0;
+}
+
+.text__title:hover::before {
+	animation: before 0.5s linear 33s forwards;
+}
+
+@keyframes before {
+	0% {
+		width: 450px;
+	}
+	100% {
+		width: 0px;
+	}
+}
+
+.text__title::after {
+	content: "";
+	display: inline-block;
+	height: 2px;
+	width: 0;
+	background-color: #fff;
+	position: absolute;
+	top: 0;
+	left: 55px;
+	transition: 1s;
+}
+
+.text__title:hover::after {
+	animation: after 0.5s linear 1s forwards;
+}
+
+@keyframes after {
+	0% {
+		width: 0px;
+	}
+	100% {
+		width: 450px;
+		left: 0;
+	}
+}
+
+.text__main {
+	line-height: 1.2;
+	font-size: 16px;
+	transform: translate(850px);
+	animation: text 2s ease-out 34s 1 forwards;
+}
+
+@keyframes text {
+	0% {
+		transform: translate(850px);
+	}
+	100% {
+		transform: translate(0,0);
+	}
+}
