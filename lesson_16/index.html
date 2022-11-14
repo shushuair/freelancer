@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Document</title>
+   <link rel="stylesheet" href="css/reset.css">
+   <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+   <div class="wrapper">
+      <header class="header"></header>
+      <main class="page">
+         <section class="page__main wizzair">
+
+            <h1 class="wizzair-form__title">PASSENGERS AND BAGGAGES</h1>
+            <div class="wizzair-form__container">
+               <div class="wizzair-form__wrapper">
+                  <form action="https://jsonplaceholder.typicode.com/posts" enctype="multipart/form-data" method="GET"
+                     class="wizzair-form__form">
+                     <div class="wizzair-form__line">
+                        <label for="name" class="wizzair-form__label">1. First name</label>
+                        <input id="name" required autocomplete="off" type="text" name="name" placeholder="First name"
+                           class="wizzair-form__input">
+                        <label for="surname" class="wizzair-form__label">Last name</label>
+                        <input id="surname" required autocomplete="off" type="text" name="surname"
+                           placeholder="Last name" class="wizzair-form__input">
+                     </div>
+                     <div class="wizzair-form__line">
+                        <h4>Сhoose your Sex</h4>
+                        <div class="form__radio">
+                           <input checked class="wizzair-form__label form__input_radio" id="pet-01" required value="man"
+                              name="sex" type="radio">
+                           <label class="wizzair-form__label" for="pet-01">MAN</label>
+                        </div>
+                        <div class="form__radio">
+                           <input class="wizzair-form__label form__input_radio" id="pet-02" required name="sex"
+                              value="woman" type="radio">
+                           <label class="wizzair-form__label" for="pet-02">WOMAN</label>
+                        </div>
+                     </div>
+                     <div class="checkbox">
+                        <input id="loyalty" type="checkbox" value="yes" name="car" class="checkbox__input">
+                        <label for="loyalty" class="checkbox__label"><span class="checkbox__text">Do you need special
+                              assistance?</span></label>
+                     </div>
+                     <div class="wizzair-form__line">
+                        <h4> How do you want to pay? </h4>
+                        <select name="list" id="list">
+                           <option value="">Google Pay</option>
+                           <option value="">PayPal</option>
+                           <option value="">Apple Pay</option>
+                           <option value="">Debit Card (except American Express)</option>
+                           <option value="">Credit Card</option>
+                        </select>
+                     </div>
+                     <div class="wizzair-form__line">
+                        <label class="wizzair-form__label" for="file">
+                           Add passport</label>
+                        <input class="wizzair-form__input" id="file" name="file" accept="image/png, image/svg"
+                           type="file">
+                     </div>
+                     <div class="wizzair-form__line">
+                        <label class="wizzair-form__label" for="textarea">
+                           Your preferences </label>
+                        <textarea class="wizzair-form__input" id="textarea"></textarea>
+                     </div>
+                     <div class="wizzair-form__line">
+                        <h2 class="wizzair-form__title">What is the type of the ticket?
+                        </h2>
+                        <div class="wizzair-form__text">
+                           <label class="wizzair-form__label form__label--radio-label" for="economy">
+                              Economy Class
+                           </label>
+                           <input class="wizzair-form__input form__input--box-radio" id="economy" name="class" required
+                              type="radio" value="yes">
+                        </div>
+                        <div class="wizzair-form__text">
+                           <label class="wizzair-form__label form__label--radio-label" for="business">
+                              Business Class
+                           </label>
+                           <input class="wizzair-form__input form__input--box-radio" id="business" name="class" required
+                              type="radio" value="yes">
+                        </div>
+                        <div class="wizzair-form__text">
+                           <label class="wizzair-form__label form__label--radio-label" for="first">
+                              First Class
+                           </label>
+                           <input class="wizzair-form__input form__input--box-radio" id="first" name="class" required
+                              type="radio" value="yes">
+                        </div>
+                     </div>
+                     <div class="wizzair-form__line">
+                        <label for="age" class="wizzair-form__label">2. AGE</label>
+                        <input id="age" required autocomplete="off" type="number" name="age" placeholder="Age"
+                           class="wizzair-form__input">
+                     </div>
+                     <div class="wizzair-form__line">
+                        <label for="dob" class="wizzair-form__label">3. DATE OF BIRTH</label>
+                        <input id="dob" required autocomplete="off" type="date" name="dob" class="wizzair-form__input">
+                     </div>
+                     <div class="wizzair-form__line">
+                        <label for="email" class="wizzair-form__label">4. YOUR EMAIL</label>
+                        <input id="email" required autocomplete="off" type="email" name="email" placeholder="YOUR EMAIL"
+                           class="wizzair-form__input">
+                     </div>
+                     <div class="wizzair-form__line">
+                        <label for="password" class="wizzair-form__label">5. YOUR PASSWORD</label>
+                        <input id="password" required autocomplete="off" type="password" name="password"
+                           placeholder="YOUR PASSWORD" class="wizzair-form__input">
+                     </div>
+                     <div class="wizzair-form__line">
+                        <label for="phone" class="wizzair-form__label">6. YOUR PHONE NUMBER</label>
+                        <input id="phone" required autocomplete="off" type="tel" name="tel"
+                           placeholder="YOUR PHONE NUMBER" class="wizzair-form__input">
+                     </div>
+                     <div class="wizzair-form__line">
+                        <label for="search" class="wizzair-form__label">7. FIND THE CLOSEST AIRPORT</label>
+                        <input id="search" required autocomplete="off" type="search" name="search"
+                           placeholder="FIND THE CLOSEST AIRPORT" class="wizzair-form__input">
+                     </div>
+                     <div class="wizzair-form__line">
+                        <label for="color" class="wizzair-form__label">8. YOUR FAVORITE COLOR</label>
+                        <input id="color" autocomplete="off" type="color" name="color"
+                           class="wizzair-form__input wizzair-form__input-color">
+                     </div>
+                     <div class="form__actions">
+                        <div class="button">
+                           <button type="reset">CLEAR</button>
+                        </div>
+                        <div class="button">
+                           <button type="submit">SEND</button>
+                        </div>
+                     </div>
+                  </form>
+               </div>
+            </div>
+         </section>
+
+         <section class="page__main drop-us">
+            <div class="drop-us__container">
+               <div class="drop-us__picture">
+                  <img src="img/illustration.png" alt="illustration">
+               </div>
+               <div class="drop-us__contact any-questions">
+                  <div class="any-questions__text">
+                     <h2 class="any-questions__subtitle subtitle">
+                        Any questions?</h2>
+                     <h2 class="any-questions__title title">Drop us a
+                        line</h2>
+                  </div>
+                  <div class="any-questions__form form-questions">
+                     <form action="https://jsonplaceholder.typicode.com/posts" method="post"
+                        enctype="multipart/form-data" class="form-questions__body">
+                        <div class="form-questions__item">
+                           <label class="form-questions-label" for="first-name">First Name*
+                           </label>
+                           <input class="form-questions__input-text" name="name" type="text"
+                              placeholder="Your first name" id="first-name" required>
+                        </div>
+                        <div class="form-questions__item">
+                           <label class="form-questions-label" for="last-name">
+                              Last Name*
+                           </label>
+                           <input class="form-questions__input-text" name="last-name" type="text"
+                              placeholder="Your last name" id="last-name" required>
+                        </div>
+                        <div class="form-questions__item">
+                           <label class="form-questions-label" for="work-email">
+                              Email*
+                           </label>
+                           <input class="form-questions__input-text" name="email" type="email"
+                              placeholder="Your working email" id="work-email" required>
+                        </div>
+                        <div class="form-questions__item">
+                           <label class="form-questions-label" for="work-phone">
+                              Phone
+                           </label>
+                           <input class="form-questions__input-text" name="phone" type="number"
+                              placeholder="Your phone number" id="work-phone">
+                        </div>
+                        <div class="form-questions__textarea">
+                           <label class="form-questions-label" for="message">Message*</label>
+                           <textarea name="textarea" id="message" cols="30" placeholder="Your message" required
+                              rows="10"></textarea>
+                        </div>
+                        <div class="form-questions__checkbox
+                                   ">
+                           <input type="checkbox" required id="checkbox-questions">
+                           <label class="form-checkbox__label" for="checkbox-questions">
+                              I agree to receive
+                              communications
+                              from Createx Online School
+                           </label>
+                        </div>
+                        <div class="form-questions__button">
+                           <button class="form-button button--width" name="send-message" type="submit"><span>
+                                 Send message</span></button>
+                        </div>
+                     </form>
+                  </div>
+               </div>
+            </div>
+
+         </section>
+
+      </main>
+      <footer class="footer"></footer>
+   </div>
+</body>
+
+</html>
